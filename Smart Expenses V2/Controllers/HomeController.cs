@@ -33,6 +33,13 @@ namespace Smart_Expenses_V2.Controllers
             return View();
         }
 
+        public IActionResult CreateEditExpenseform(Expenses model)
+
+        {
+            return RedirectToAction("Expenses");
+
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
